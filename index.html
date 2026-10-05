@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <!-- Header: Progress & Score Tracker -->
+    <header class="quiz-header">
+      <div class="progress-info">
+        <span id="question-count">Question 1 of 5</span>
+        <span id="score-tracker">Score: 0</span>
+      </div>
+      <div class="progress-bar-container">
+        <div id="progress-bar" class="progress-bar"></div>
+      </div>
+    </header>
+
+    <!-- Quiz Question Card -->
+    <main id="quiz-card" class="quiz-card">
+      <h2 id="question-text">Question goes here...</h2>
+      <div id="options-container" class="options-container">
+        <!-- Dynamic Option Buttons -->
+      </div>
+      <div id="feedback-msg" class="feedback-msg hidden"></div>
+      <button id="next-btn" class="btn hidden">Next Question</button>
+    </main>
+
+    <!-- Results Summary Screen -->
+    <section id="results-screen" class="results-screen hidden">
+      <h2>Quiz Completed!</h2>
+      <div class="score-circle">
+        <span id="final-score">0/5</span>
+        <small id="score-percentage">0%</small>
+      </div>
+      <p id="performance-msg">Great job!</p>
+      <button id="restart-btn" class="btn">Restart Quiz</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
